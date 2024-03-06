@@ -1,0 +1,280 @@
+/* body {
+    background-color: white;
+}
+.container {
+    
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    margin-right:10px;
+  }
+  
+  .button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .button-danger {
+    background-color: red;
+    color: #fff;
+  }
+  
+  .button-success {
+    background-color: #28a745;
+    color: #fff;
+  } */
+
+
+  /* Main container styling */
+  .drawer-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically (if needed) */
+    flex-direction: column; /* Stack label and input vertically */
+    margin-bottom: 20px; /* Add some space before the next section */
+  }
+  
+  .drawer-box {
+    margin-bottom: 10px; /* Space between the label and the input */
+  }
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.title {
+  color: #333;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Style for form labels */
+.label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Style for input fields */
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+/* Specific button styles */
+.button-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-danger:hover {
+  background-color: #c73829;
+}
+
+.button-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-success:hover {
+  background-color: #3e8e41;
+}
+
+/* Style for displaying total amounts */
+h2 {
+  color: #333;
+  font-weight: normal;
+  margin-top: 10px;
+}
+
+/* Ensures the app is not too narrow on small screens */
+@media (max-width: 640px) {
+  .container {
+    padding: 10px;
+  }
+}
+
+/* Input groups styling */
+.input-groups {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.coins-section,
+.currency-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+h2 {
+  color: #333;
+  font-weight: normal;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .input-groups {
+    flex-direction: column;
+  }
+
+  .coins-section,
+  .currency-section {
+    margin: 0 0 20px;
+  }
+}
+
+.denomination-box {
+  border: 2px solid #ddd; /* Light gray border */
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px; /* Slightly rounded corners for a modern look */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.denomination-box label,
+.denomination-box p {
+  display: block; /* Ensure labels and paragraphs take the full width */
+  margin-bottom: 5px;
+}
+
+.denomination-box input {
+  margin-bottom: 10px; /* Space out inputs */
+  width: calc(100% - 22px); /* Adjust input width to fit border and padding */
+  padding: 5px; /* Slightly larger click area and visual appeal */
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* Enhance responsiveness */
+@media (max-width: 768px) {
+  .input-groups {
+    flex-direction: column;
+  }
+
+  .coins-section,
+  .currency-section {
+    margin: 0 0 20px;
+  }
+
+  .denomination-box input {
+    width: calc(100% - 12px); /* Adjust for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .drawer-container input {
+    width: 70%; /* Adjust the width on smaller screens */
+  }
+}
+
+.drawer-container input[type="number"] {
+  width: 50%; /* Adjust the width as needed */
+  text-align: center; /* Centers the text inside the input */
+  margin: auto; /* Center the input box itself if needed */
+  font-weight: bold; /* Make the number bold */
+  font-size: 20px; /* Adjust the font size as needed */
+}
+
+.total-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-box h2 {
+  margin-right: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+}
+
+.button-container button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.button-container .button-danger {
+  background-color: #f44336;
+  color: white;
+}
+
+.button-container .button-danger:hover {
+  background-color: #c73829;
+}
+
+.button-container .button-success {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button-container .button-success:hover {
+  background-color: #3e8e41;
+}
+
+.input-groups {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 20px; /* Add margin to create space between top container and total box */
+}
+
