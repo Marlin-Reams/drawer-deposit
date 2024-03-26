@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/drawer-deposit/static/css/main.3a581fd3.css",
+    "main.js": "/drawer-deposit/static/js/main.9749e7e2.js",
+    "index.html": "/drawer-deposit/index.html",
+    "main.3a581fd3.css.map": "/drawer-deposit/static/css/main.3a581fd3.css.map",
+    "main.9749e7e2.js.map": "/drawer-deposit/static/js/main.9749e7e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a581fd3.css",
+    "static/js/main.9749e7e2.js"
+  ]
+}
